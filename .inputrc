@@ -10,8 +10,13 @@
 # is searched (like 4dos for e.g.).
 # Note to get rid of a line just Ctrl-C
 #
-"\e[B": history-search-forward
-"\e[A": history-search-backward
+
+# Use the text that has already been typed as the prefix for searching through
+# commands (i.e. more intelligent Up/Down behavior)
+"\e[A":history-search-backward
+"\C-p": history-search-backward
+"\e[B":history-search-forward
+"\C-n": history-search-forward
  
 $if Bash
   # F10 toggles mc on and off
