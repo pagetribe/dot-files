@@ -17,6 +17,21 @@
 "\C-p": history-search-backward
 "\e[B":history-search-forward
 "\C-n": history-search-forward
+
+# Do not autocomplete hidden files unless the pattern explicitly begins with a dot
+set match-hidden-files off
+
+# Show all autocomplete results at once
+set page-completions off
+
+# Immediately show all possible completions
+set show-all-if-ambiguous on
+
+# If there are more than 200 possible completions for a word, ask to show them all
+set completion-query-items 200
+
+# Show extra file information when completing, like `ls -F` does
+set visible-stats on
  
 $if Bash
   # F10 toggles mc on and off
